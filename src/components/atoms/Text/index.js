@@ -1,20 +1,11 @@
 import React from "react";
-import { Text,StyleSheet,} from 'react-native'
+import {CustomText} from './styles'
 
-export const CustomText =({ children})=>{
+export const Text =({ children, color})=>{
     return(
-      <Text style={styles.titleText}>
+      <CustomText color={color}>
         {children}
-      </Text>
+      </CustomText>
     )
 }
 
-const styles = StyleSheet.create({
- 
-    titleText:{
-      color:'#089da1',
-      fontSize: 20,
-      marginTop:12
-    }
-  });
-  
